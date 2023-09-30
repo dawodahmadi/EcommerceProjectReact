@@ -1,0 +1,8 @@
+/* frontend/src/components/Footer/Footer.css */
+
+.footer {
+    background-color: #222;
+    color: #aaa;
+    padding: 20px 0;
+    text-align: center;
+}
