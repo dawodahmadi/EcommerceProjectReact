@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 // Debug: Print the value of MONGODB_URI to the console
+// this is a test
 console.log(process.env.MONGODB_URI);
 
 mongoose.connect(process.env.MONGODB_URI, {
