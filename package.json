@@ -4,7 +4,8 @@
   "scripts": {
     "start": "node backend/server.js",
     "client": "cd frontend && npm start",
-    "dev": "concurrently \"npm start\" \"npm run client\""
+    "dev": "concurrently \"npm start\" \"npm run client\"",
+    "build": "npm --prefix frontend run build"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
