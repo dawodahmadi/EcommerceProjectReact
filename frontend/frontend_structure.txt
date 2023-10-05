@@ -1,0 +1,32 @@
+.
+├── frontend_structure.txt
+├── package-lock.json
+├── package.json
+├── public
+│   └── index.html
+└── src
+    ├── App.js
+    ├── assets
+    ├── components
+    │   ├── Footer
+    │   │   ├── Footer.css
+    │   │   └── Footer.jsx
+    │   └── Header
+    │       ├── Header.css
+    │       └── Header.jsx
+    ├── context
+    ├── hooks
+    ├── index.js
+    ├── utils
+    └── views
+        ├── About
+        │   └── About.jsx
+        ├── Cart
+        ├── Checkout
+        ├── Contact
+        │   └── Contact.jsx
+        ├── Home
+        │   └── Home.jsx
+        └── ProductDetail
+
+14 directories, 16 files
