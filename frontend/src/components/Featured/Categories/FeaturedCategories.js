@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import {FeatureCategoryContext} from '../../../context/FeaturedCategoryContext'
+import { FeatureCategoryContext } from "../../../context/FeaturedCategoryContext";
 import CategoryCard from "../../Card/FeaturedCard/CategoryCard";
-import './FeaturedCategories.css'
+import '../Categories/FeaturedCategories.css'
 
 const Categories = () => {
     const featuredCategories = useContext(FeatureCategoryContext)

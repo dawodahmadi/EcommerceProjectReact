@@ -1,6 +1,7 @@
 import Control from '../Controls/Control';
-import NavBrand from '../NavBrand/NavBrand';
-import Form from '../../Search-Bar/Form'
+import DrawerNav from '../../Nav/DrawerNav/DrawerNav';
+import NavBrand from '../../../components/Nav/NavBrand/NavBrand';
+import Form from '../../../components/Search-Bar/Form';
 import './Container.css'
 
 const Navtop = () => {
@@ -13,6 +14,9 @@ const Navtop = () => {
                     </div>
                     <div className="control__bar">
                         <Control />
+                    </div>
+                    <div className="drawer">
+                        <DrawerNav />
                     </div>
                 </div>
             </div>

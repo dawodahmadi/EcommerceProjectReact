@@ -1,19 +1,21 @@
-const mongoose = require('mongoose');
+const { connect, disconnect } = require('mongoose');
 
-// Debug: Print the value of MONGODB_URI to the console
-// this is a test
-console.log(process.env.MONGODB_URI);
+async function connectToDatabase() {
+    try {
+        await connect(process.env.MONGODB_URL);
+    } catch (error) {
+        console.log(error);
+        throw new Error("Unable to create connection, try again...");
+    }
+}
 
-mongoose.connect(process.env.MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+async function disconnectFromDatabase() {
+    try {
+        await disconnect();
+    } catch (error) {
+        console.log(error);
+        throw new Error("Unable to disconnect connection, try again...");
+    }
+}
 
-mongoose.connection.on('connected', () => {
-  console.log('Connected to MongoDB Atlas');
-});
-
-mongoose.connection.on('error', (err) => {
-  console.error('Error connecting to MongoDB Atlas:', err);
-});
-
+module.exports = { connectToDatabase, disconnectFromDatabase };
